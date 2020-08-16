@@ -1,0 +1,6 @@
+type Quote @model @auth(rules: [
+  { allow: owner } ]) {
+  id: ID!
+  quote: String!
+  owner: String
+}
